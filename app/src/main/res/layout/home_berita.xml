@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="2dp"
+    android:layout_margin="10dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/gBerita"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:src="@drawable/front"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/jBerita"
+            android:layout_toRightOf="@id/gBerita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fjalla_one"
+            android:text="Srambang Park"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#2C2C2C"
+            />
+
+        <TextView
+            android:id="@+id/dBerita"
+            android:layout_below="@id/jBerita"
+            android:layout_toRightOf="@id/gBerita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="asf asfaf asfsafasf asfasfasf asfasfasf asfasfas af"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

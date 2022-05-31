@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ta.project.wisata">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logos"
+        android:label="Wisata Ngawi"
+        android:roundIcon="@mipmap/logos_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Wisata">
+        <activity android:name=".Beranda"></activity>
+        <activity android:name=".wisata.WisataKuliner" />
+        <activity android:name=".wisata.WisataTaman" />
+        <activity android:name=".wisata.WisataWahana" />
+        <activity android:name=".wisata.WisataSejarah" />
+        <activity android:name=".detail.DetailBerita" />
+        <activity android:name=".berita.BeritaActivity" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".panorama.PanoActivity" />
+        <activity android:name=".detail.DetailWisata" />
+        <activity android:name=".wisata.HomeActivity" />
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA8s6NS2GgWPz0vHbE0IeDsDZCH_vJboTk" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>
